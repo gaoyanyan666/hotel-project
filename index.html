@@ -157,11 +157,12 @@
                     <span class="carousel-control-next-icon " aria-hidden="true "></span>
                     <span class="sr-only ">Next</span>
                 </a>
-
             </div>
         </div>
+    </div>
 
-
+    <!--main content part start-->
+    <div class="container">
         <div class="row row-content align-items-center ">
             <div class="col">
                 <h2 class="text-sm-center " style="text-transform: uppercase;">Discover Anna's vacation home</h2>
@@ -170,7 +171,7 @@
         </div>
 
         <div class="row row-content align-items-center ">
-            <div class="col order-last text-center">
+            <div class="col order-sm-last text-center">
                 <h2 class="text-md-center">HOTEL STATUS DURING COVID-19</h2>
                 <p class="d-none d-sm-block">A centralized place to find the latest information about property reopenings and current facility availability, including any temporary changes to property offerings.</p>
                 <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
@@ -186,58 +187,62 @@
 
         <div class="row row-content align-items-center ">
             <div class="col order-sm-first text-center">
-                <h2>Specialty suits</h2>
-                <p>Featuring bespoke furnishings and elegant artworks, these spacious Suites showcase open-concept living and dining areas, designed for quality time together with friends and family.</p>
+                <h2 class="text-md-center">Specialty suits</h2>
+                <p class="d-none d-sm-block">Featuring bespoke furnishings and elegant artworks, these spacious Suites showcase open-concept living and dining areas, designed for quality time together with friends and family.</p>
                 <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
             </div>
             <div class="col ">
                 <div class="media ">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/room.jpeg" alt="family time">
+                    <div class="media-body align-self-center ">
+                        <img class="d-flex mr-3 img-thumbnail" src="img/room.jpeg" alt="family time">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row row-content align-items-center ">
-        <div class="col order-last text-center">
-            <h2 class="text-md-center">Exclusive Dinners</h2>
-            <p class="d-none d-sm-block">Dine at one of our most elite locations on the beach just steps from the warm Pacific waters, a personal server will create an unforgettable evening.</p>
-            <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
-        </div>
-        <div class="col">
-            <div class="media">
-                <div class="media-body align-self-center ">
-                    <img src="img/dinner.jpeg" alt="dinner" class="rounded float-left img-thumbnail">
+        <div class="row row-content align-items-center ">
+            <div class="col order-sm-last text-center">
+                <h2 class="text-md-center">Exclusive Dinners</h2>
+                <p class="d-none d-sm-block">Dine at one of our most elite locations on the beach just steps from the warm Pacific waters, a personal server will create an unforgettable evening.</p>
+                <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
+            </div>
+            <div class="col">
+                <div class="media">
+                    <div class="media-body align-self-center ">
+                        <img src="img/dinner.jpeg" alt="dinner" class="d-flex ml-3 img-thumbnail">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row row-content align-items-center ">
-        <div class="col order-sm-first text-center">
-            <h2>Amazing Family Time</h2>
-            <p>Our game and activity centre, is designed especially for hard-to-impress young adults, with a state-of-the-art entertainment system, six video game stations and a grassy area for outdoor games.</p>
-            <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
-        </div>
-        <div class="col ">
-            <div class="media ">
-                <img class="d-flex mr-3 img-thumbnail" src="img/family.jpeg" alt="family time">
+        <div class="row row-content align-items-center ">
+            <div class="col order-sm-first text-center">
+                <h2 class="text-md-center">Amazing Family Time</h2>
+                <p class="d-none d-sm-block">Our game and activity centre, is designed especially for hard-to-impress young adults, with a state-of-the-art entertainment system, six video game stations and a grassy area for outdoor games.</p>
+                <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
+            </div>
+            <div class="col ">
+                <div class="media ">
+                    <div class="media-body align-self-center ">
+                        <img class="d-flex mr-3 img-thumbnail" src="img/family.jpeg" alt="family time">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
 
-
-    <div class="row row-content ">
-        <div class="col-sm-8 mx-auto ">
-            <div class="card ">
-                <h3 class="card-header bg-secondary text-white ">Reserve a room</h3>
-                <div class="card-body ">
-                    <form action=" " id="reserveForm ">
-                        <div class="row form-group ">
-                            <label class="col-sm-4 col-form-label " for="numOfAdult ">Number of Adult</label>
-                            <div class="col-sm-8 ">
-                                <select class="form-control " name="numOfAdult " id="numOfAdult ">
+    </div>
+    <!--madal reserveForm start-->
+    <div class="container">
+        <div class="row row-content ">
+            <div class="col-sm-8 mx-auto ">
+                <div class="card ">
+                    <h3 class="card-header bg-secondary text-white ">Reserve a room</h3>
+                    <div class="card-body ">
+                        <form action=" " id="reserveForm ">
+                            <div class="row form-group ">
+                                <label class="col-sm-4 col-form-label " for="numOfAdult ">Number of Adult</label>
+                                <div class="col-sm-8 ">
+                                    <select class="form-control " name="numOfAdult " id="numOfAdult ">
                                     <option selected>Select...</option>
                                     <option value="1 ">1</option>
                                     <option value="2 ">2</option>
@@ -246,12 +251,12 @@
                                     <option value="5 ">5</option>
                                     <option value="6 ">6</option>
                                 </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row form-group ">
-                            <label class="col-sm-4 col-form-label " for="numChild ">Number of Child</label>
-                            <div class="col-sm-8 ">
-                                <select class="form-control " name="numChild" id="numChild">
+                            <div class="row form-group ">
+                                <label class="col-sm-4 col-form-label " for="numChild ">Number of Child</label>
+                                <div class="col-sm-8 ">
+                                    <select class="form-control " name="numChild" id="numChild">
                                     <option selected>Select...</option>
                                     <option value="1 ">1</option>
                                     <option value="2 ">2</option>
@@ -260,26 +265,27 @@
                                     <option value="5 ">5</option>
                                     <option value="6 ">6</option>
                                 </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="row form-group ">
-                            <label for="date " class="col-sm-4 col col-form-label ">Date</label>
-                            <div class="col-sm-8 ">
-                                <input class="form-control " type="date" id="date " name="date " placeholder="mm/dd/yyyy " class="col " required />
+                            <div class="row form-group ">
+                                <label for="date " class="col-sm-4 col col-form-label ">Date</label>
+                                <div class="col-sm-8 ">
+                                    <input class="form-control " type="date" id="date " name="date " placeholder="mm/dd/yyyy " class="col " required />
+                                </div>
                             </div>
-                        </div>
-                        <div class="row form-group ">
-                            <div class="col">
-                                <button type="submit " class="btn btn-secondary btn-darker ">Search</button>
+                            <div class="row form-group ">
+                                <div class="col">
+                                    <button type="submit " class="btn btn-secondary btn-darker ">Search</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- footer start-->
     <footer class="site-footer ">
         <div class="container-fluid ">
             <div class="row ">
