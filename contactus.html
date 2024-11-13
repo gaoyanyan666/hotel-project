@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | Anna's Vacation Home</title>
+
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@1,300&family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.jpeg" height="30" width="30" alt="Logo"> Phantom Resort Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Site</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Us Header -->
+    <header class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4">Get in Touch</h1>
+            <p class="lead">We're here to help you plan your perfect getaway.</p>
+        </div>
+    </header>
+
+    <!-- Contact Information Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> 123 Paradise Rd, Sunny Beach, CA 90210</p>
+                <p><strong>Phone:</strong> +1-206-555-1234</p>
+                <p><strong>Email:</strong> <a href="mailto:info@annasvacationhome.com">info@phantomresort.com</a></p>
+                <p>Follow us on social media for the latest updates:</p>
+                <div class="social-icons">
+                    <a href="http://instagram.com/" class="fa fa-instagram fa-lg mr-3"></a>
+                    <a href="http://facebook.com/" class="fa fa-facebook fa-lg mr-3"></a>
+                    <a href="http://twitter.com/" class="fa fa-twitter fa-lg mr-3"></a>
+                    <a href="http://youtube.com/" class="fa fa-youtube fa-lg"></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Contact Form</h2>
+                <p>Fill out the form below, and we’ll get back to you as soon as possible.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="container my-5">
+        <h2 class="text-center">Our Location</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509144!2d144.95592511531647!3d-37.81720997975167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5774d8ba9b4f7a9!2s123%20Paradise%20Rd%2C%20Sunny%20Beach%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1611765513563!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer mt-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="aboutus.html" class="text-white">About</a></li>
+                        <li><a href="#" class="text-white">Site</a></li>
+                        <li><a href="contactus.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5>Social</h5>
+                    <a href="http://instagram.com/" class="fa fa-instagram fa-lg text-white mr-3"></a>
+                    <a href="http://facebook.com/" class="fa fa-facebook fa-lg text-white mr-3"></a>
+                    <a href="http://twitter.com/" class="fa fa-twitter fa-lg text-white mr-3"></a>
+                    <a href="http://youtube.com/" class="fa fa-youtube fa-lg text-white"></a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <p><i class="fa fa-phone"></i> +1-206-555-1234</p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:info@annasvacationhome.com" class="text-white">info@annasvacationhome.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript from CDN for Bootstrap, jQuery, and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

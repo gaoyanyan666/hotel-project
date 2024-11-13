@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
 
@@ -14,9 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@1,300&family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <title>vacation home to getaway</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Vacation Home Getaway</title>
 </head>
 
 <body>
@@ -25,25 +24,26 @@
         <div class="container-fluid">
             <div class="row row-content">
                 <div class="col-sm-2 align-self-center">
-                    <img src="img/logo.jpeg" class="img-fluid img-thumbnail rounded d-none d-sm-block " />
+                    <img src="img/logo.jpeg" class="img-fluid img-thumbnail rounded d-none d-sm-block" alt="Company logo" />
                 </div>
                 <div class="col col-lg-7 align-self-center">
-                    <h2 class="">Anna's vacation home</h2>
-                    <h3>a better way to getaway</h3>
+                    <h2>Phantom Resort Vacation Home</h2>
+                    <h3>A Better Way to Getaway</h3>
                 </div>
                 <div class="col col-lg-3 align-self-center">
-                    <a class="btn btn-darker btn-secondary btn-lg" href="#reserveForm" style="text-transform: uppercase;" role="button" data-toggle="tooltip" data-placement="bottom" data-html="true" title="or call us at<br> <strong> 1-206-123-4567</strong>">Reserve a room</a>
+                    <a class="btn btn-darker btn-secondary btn-lg" href="reserve.html" style="text-transform: uppercase;" role="button" data-toggle="tooltip" data-placement="bottom" data-html="true" title="or call us at<br> <strong> 1-206-123-4567</strong>">Reserve a Room</a>
                 </div>
             </div>
         </div>
     </header>
+
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/logo.jpeg" height="30" width="30" /></a>
+            <a class="navbar-brand" href="#"><img src="img/logo.jpeg" height="30" width="30" alt="Brand logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="nucampNavebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a>
@@ -59,13 +59,14 @@
                     </li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                   <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
                         <i class="fa fa-sign-in"></i> Login
-                   </a>
+                    </a>
                 </span>
             </div>
         </div>
     </nav>
+
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -74,256 +75,111 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <div class="container-fluid">
-                        <form action="">
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginEmail">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label">Remember</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--carousel section-->
-    <div class="container">
-        <div class="row row-content">
-            <!--carousel indicators-->
-            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#homeCarousel" data-slide-to="1"></li>
-                    <li data-target="#homeCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <!--first carousel slide  style="background-image:url(img/villa.jpeg); background-size: cover; "-->
-                    <div class="carousel-item active ">
-
-                        <img src="img/villa.jpeg " alt="villa image " class="img-fluid d-block w-100">
-                        <div class="carousel-caption ">
-                            <h5>Villa</h5>
-                            <p class="">Our villas and homes provide the perfect stage for unforgettable moments that are distinctly yours, with all the comforts of home.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
                         </div>
-
-                    </div>
-
-                    <!--second carousel slide-->
-
-                    <div class="carousel-item " style="background-image:url(img/pool.jpeg); background-size: cover; ">
-                        <img src="img/pool.jpeg " alt="pool image " class="img-fluid d-block w-100">
-
-                        <div class="carousel-caption d-none d-md-block ">
-                            <h5>Beach</h5>
-                            <p>With over 9 miles of white-sand beaches as your personal playground, you’ll feel like you’ve discovered your own private tropical paradise.</p>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
                         </div>
-                    </div>
-
-                    <!--last carousel slide-->
-
-                    <div class="carousel-item " style="background-image:url(img/spa.jpeg); background-size: cover; ">
-                        <img src="img/spa.jpeg " alt="villa image " class="img-fluid d-block w-100">
-
-                        <div class="carousel-caption ">
-                            <h5>SPA/Wellness</h5>
-                            <p class="d-none d-sm-block ">Reach deep relaxation surrounded by exotic flora and fauna, with a natural sense of tranquillity that soothes body and mind.</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
                         </div>
-                    </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
+                    </form>
                 </div>
-                <!--carousel button section-->
-                <a class="carousel-control-prev " href="#homeCarousel " role="button " data-slide="prev ">
-                    <span class="carousel-control-prev-icon " aria-hidden="true "></span>
-                    <span class="sr-only ">Previous</span>
-                </a>
-                <a class="carousel-control-next " href="#homeCarousel " role="button " data-slide="next ">
-                    <span class="carousel-control-next-icon " aria-hidden="true "></span>
-                    <span class="sr-only ">Next</span>
-                </a>
             </div>
         </div>
     </div>
 
-    <!--main content part start-->
+    <!-- Carousel section -->
     <div class="container">
-        <div class="row row-content align-items-center ">
-            <div class="col">
-                <h2 class="text-sm-center " style="text-transform: uppercase;">Discover Anna's vacation home</h2>
-            </div>
-
-        </div>
-
-        <div class="row row-content align-items-center ">
-            <div class="col order-sm-last text-center">
-                <h2 class="text-md-center">HOTEL STATUS DURING COVID-19</h2>
-                <p class="d-none d-sm-block">A centralized place to find the latest information about property reopenings and current facility availability, including any temporary changes to property offerings.</p>
-                <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
-            </div>
-            <div class="col">
-                <div class="media ">
-                    <div class="media-body align-self-center ">
-                        <img src="img/covid.jpeg " alt="covid policy " class="rounded float-left img-thumbnail">
+        <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#homeCarousel" data-slide-to="1"></li>
+                <li data-target="#homeCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/villa.jpeg" alt="Villa image" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Villa</h5>
+                        <p>Our villas provide the perfect stage for unforgettable moments with all the comforts of home.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/leisure.jpeg" alt="leisure image" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Beach</h5>
+                        <p>Your own private tropical paradise awaits.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/spa.jpeg" alt="Spa image" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Spa/Wellness</h5>
+                        <p>Relax surrounded by nature's tranquility.</p>
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-
-        <div class="row row-content align-items-center ">
-            <div class="col order-sm-first text-center">
-                <h2 class="text-md-center">Specialty suits</h2>
-                <p class="d-none d-sm-block">Featuring bespoke furnishings and elegant artworks, these spacious Suites showcase open-concept living and dining areas, designed for quality time together with friends and family.</p>
-                <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
-            </div>
-            <div class="col ">
-                <div class="media ">
-                    <div class="media-body align-self-center ">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/room.jpeg" alt="family time">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-content align-items-center ">
-            <div class="col order-sm-last text-center">
-                <h2 class="text-md-center">Exclusive Dinners</h2>
-                <p class="d-none d-sm-block">Dine at one of our most elite locations on the beach just steps from the warm Pacific waters, a personal server will create an unforgettable evening.</p>
-                <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <div class="media-body align-self-center ">
-                        <img src="img/dinner.jpeg" alt="dinner" class="d-flex ml-3 img-thumbnail">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-content align-items-center ">
-            <div class="col order-sm-first text-center">
-                <h2 class="text-md-center">Amazing Family Time</h2>
-                <p class="d-none d-sm-block">Our game and activity centre, is designed especially for hard-to-impress young adults, with a state-of-the-art entertainment system, six video game stations and a grassy area for outdoor games.</p>
-                <button type="button" class="btn btn-darker btn-secondary ">Learn More</button>
-            </div>
-            <div class="col ">
-                <div class="media ">
-                    <div class="media-body align-self-center ">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/family.jpeg" alt="family time">
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-    <!--madal reserveForm start-->
+
+    <!-- Main content section -->
     <div class="container">
-        <div class="row row-content ">
-            <div class="col-sm-8 mx-auto ">
-                <div class="card ">
-                    <h3 class="card-header bg-secondary text-white ">Reserve a room</h3>
-                    <div class="card-body ">
-                        <form action=" " id="reserveForm ">
-                            <div class="row form-group ">
-                                <label class="col-sm-4 col-form-label " for="numOfAdult ">Number of Adult</label>
-                                <div class="col-sm-8 ">
-                                    <select class="form-control " name="numOfAdult " id="numOfAdult ">
-                                    <option selected>Select...</option>
-                                    <option value="1 ">1</option>
-                                    <option value="2 ">2</option>
-                                    <option value="3 ">3</option>
-                                    <option value="4 ">4</option>
-                                    <option value="5 ">5</option>
-                                    <option value="6 ">6</option>
-                                </select>
-                                </div>
-                            </div>
-                            <div class="row form-group ">
-                                <label class="col-sm-4 col-form-label " for="numChild ">Number of Child</label>
-                                <div class="col-sm-8 ">
-                                    <select class="form-control " name="numChild" id="numChild">
-                                    <option selected>Select...</option>
-                                    <option value="1 ">1</option>
-                                    <option value="2 ">2</option>
-                                    <option value="3 ">3</option>
-                                    <option value="4 ">4</option>
-                                    <option value="5 ">5</option>
-                                    <option value="6 ">6</option>
-                                </select>
-                                </div>
-                            </div>
-
-                            <div class="row form-group ">
-                                <label for="date " class="col-sm-4 col col-form-label ">Date</label>
-                                <div class="col-sm-8 ">
-                                    <input class="form-control " type="date" id="date " name="date " placeholder="mm/dd/yyyy " class="col " required />
-                                </div>
-                            </div>
-                            <div class="row form-group ">
-                                <div class="col">
-                                    <button type="submit " class="btn btn-secondary btn-darker ">Search</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Additional content sections go here -->
     </div>
-    <!-- footer start-->
-    <footer class="site-footer ">
-        <div class="container-fluid ">
-            <div class="row ">
-                <div class="col-4 col-sm-2 offset-1 ">
+
+    <!-- Footer section -->
+    <footer class="site-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
-                    <ul class="list-unstyled ">
-                        <li><a href="# ">Home</a></li>
-                        <li><a href="aboutus.html ">About</a></li>
-                        <li><a href="# ">Sites</a></li>
-                        <li><a href="contactus.html ">Contact</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="col-6 col-sm-5 text-center ">
+                <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram " href="http://instagram.com/ "><i class="fa fa-instagram "></i></a>
-                    <a class="btn btn-social-icon btn-facebook " href="http://facebook.com/ "><i class="fa fa-facebook "></i></a>
-                    <a class="btn btn-social-icon btn-twitter " href="http://twitter.com/ "><i class="fa fa-twitter "></i></a>
-                    <a class="btn btn-social-icon btn-google " href="http://youtube.com/ "><i class="fa fa-youtube "></i></a>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
-                <div class="col-sm text-center ">
-                    <a role="button " class="btn-dark  " href="tel:+12065551234 "><i class="fa fa-phone "></i> 1-206-555-1234</a> <br />
-                    <a role="button " class="btn-dark" href="mailto:campsites@nucamp.co "><i class="fa fa-envelope-o "></i> campsites@nucamp.co</a>
+                <div class="col-sm text-center">
+                    <a role="button" class="btn-dark" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a> <br />
+                    <a role="button" class="btn-dark" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i>info@phantomresort.com</a>
                 </div>
             </div>
+        </div>
     </footer>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js "></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js "></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <!-- JavaScript from CDN for Bootstrap, jQuery, and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(function() {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
+        $(function () {
+            // Initialize tooltips
+            $('[data-toggle="tooltip"]').tooltip();
+        });
     </script>
 </body>
-
-</html>
 
 </html>
